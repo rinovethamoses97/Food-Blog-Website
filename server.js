@@ -47,6 +47,6 @@ app.get("/add/:username/:password/:email",(req,res)=>{
         }
     })
 })
-app.listen(3001||process.env.PORT,()=>{
+app.listen(process.env.PORT||3001,()=>{
     console.log("Server Running");
 })
